@@ -109,7 +109,7 @@ class PasswordField extends React.Component {
       style: {
         width = this.props.fullWidth ? '100%' : 'inherit',
         ...otherStyle
-      } = {},   
+      } = {},
       textFieldStyle,
       type, // eslint-disable-line
       visibilityButtonStyle,
@@ -125,7 +125,7 @@ class PasswordField extends React.Component {
     const styles = getStyles(this.props, this.context, this.state)
 
     const { prepareStyles } = this.context.muiTheme
-    const actualErrorText = !errorText || errorText.trim().length == 0 ? hintText : errorText
+    const actualErrorText = !errorText || errorText.trim().length === 0 ? hintText : errorText
     return (
       <div style={{ ...styles.root, ...otherStyle }}>
         <TextField
@@ -138,7 +138,7 @@ class PasswordField extends React.Component {
           onFocus={(event) => this.handleInputFocus(event)}
           onBlur={(event) => this.handleInputBlur(event)}
         />
-        {hintText && (!errorText || errorText.trim().length == 0) ? <div style={prepareStyles(styles.hint)}>{actualErrorText}</div> : null}
+        {hintText && (!errorText || errorText.trim().length === 0) ? <div style={prepareStyles(styles.hint)}>{actualErrorText}</div> : null}
         <IconButton
           onTouchTap={() => this.toggleVisibility()}
           onMouseDown={(e) => e.preventDefault()}

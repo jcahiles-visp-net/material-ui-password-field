@@ -129,21 +129,21 @@ storiesOf('PasswordField', module)
   .add('error but hint text displayed rather than error text', () => themed(
     <PasswordField
       floatingLabelText='Enter your password'
-      errorText=" "
-      hintText="Hint Text"
+      errorText=' '
+      hintText='Hint Text'
     />
   ))
   .add('error and displays error text', () => themed(
     <PasswordField
       floatingLabelText='Enter your password'
-      errorText="Error Text"
-      hintText="Hint Text"
+      errorText='Error Text'
+      hintText='Hint Text'
     />
   ))
   .add('empty error text and displays hint text', () => themed(
     <PasswordField
       floatingLabelText='Enter your password'
-      errorText=""
-      hintText="Hint Text"
+      errorText=''
+      hintText='Hint Text'
     />
   ))
