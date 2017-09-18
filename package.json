@@ -5,8 +5,8 @@
   "main": "lib/PasswordField.js",
   "scripts": {
     "test": "standard",
-    "build": "rm -rf lib && babel src -d lib",
-    "prepare": "rm -rf lib && babel src -d lib",
+    "build": "rimraf lib && babel src -d lib",
+    "prepare": "rimraf lib && babel src -d lib",
     "storybook": "start-storybook -p 6006",
     "deploy-storybook": "storybook-to-ghpages",
     "styleguide": "mui-styleguidist server",
@@ -42,6 +42,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-tap-event-plugin": "^2.0.0",
+    "rimraf": "^2.6.2",
     "standard": "^10.0.2"
   },
   "peerDependencies": {
